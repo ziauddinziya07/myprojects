@@ -1,2 +1,3 @@
-# myprojects
-Repository for my projects 
+# Surprise
+My first mini project
+
