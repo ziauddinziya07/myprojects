@@ -1,0 +1,164 @@
+body
+{
+    background-color: rgba(0, 0, 0, 0.89);
+}
+
+#mainDiv
+{
+    /* Making the Div Center  */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+
+    width: 400px;
+    border: 2px solid white;
+    border-radius: 15px;
+
+    animation: main 1.5s 0.5s infinite;
+}
+/* Creating animation for main  */
+@keyframes main
+{
+    0%{box-shadow: 0 0 1px skyblue;}
+    50%{box-shadow: 0 0 15px skyblue;}
+    100%{box-shadow: 0 0 1px skyblue;}
+}
+
+#subDiv
+{
+    text-align: center;
+    padding: 50px;
+    border-radius: 13px;
+
+    animation: sub 1.5s 0.5s infinite;
+}
+/* Creating animation for main  */
+@keyframes sub
+{
+    0%{box-shadow: 0 0 1px skyblue inset;}
+    50%{box-shadow: 0 0 15px skyblue inset;}
+    100%{box-shadow: 0 0 1px skyblue inset;}
+}
+
+
+#msg
+{
+    font-size: 35px;
+    
+    animation: msg 2s infinite;
+}
+@keyframes msg
+{
+    0%{text-shadow: 0 0 1px red;}
+    50%{text-shadow: 0 0 10px red;}
+    100%{text-shadow: 0 0 1px red;}
+}
+
+#btn
+{
+    padding: 7px 10px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.726);
+    color: white;
+    border-radius: 7px;
+    width: 80px;
+    margin-top: 40px;
+    font-size: 20px;
+    animation: btn 1s infinite;
+}
+@keyframes btn
+{
+    0%{text-shadow: 0 0 1px red;}
+    50%{text-shadow: 0 0 20px red;}
+    100%{text-shadow: 0 0 1px red;}
+    
+    0%{box-shadow: 0 0 1px rgb(37, 212, 37) inset;}
+    50%{box-shadow: 0 0 10px rgb(37, 212, 37) inset;}
+    100%{box-shadow: 0 0 1px rgb(37, 212, 37) inset;}
+}
+
+#btn:hoverx
+{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+#signature
+{
+    font-size: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+
+    animation: signature 2s infinite;
+}
+@keyframes signature
+{
+    0%{box-shadow: 0 0 0px rgb(37, 212, 37) inset;}
+    50%{box-shadow: 0 0 10px rgb(37, 212, 37) inset;}
+    100%{box-shadow: 0 0 0px rgb(37, 212, 37) inset;}
+
+    0%{text-shadow: 0 0 1px rgb(37, 212, 37);}
+    50%{text-shadow: 0 0 10px rgb(37, 212, 37);}
+    100%{text-shadow: 0 0 1px rgb(37, 212, 37);}
+}
+
+#wish
+{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    animation: wish 1.5s infinite;
+}
+@keyframes wish
+{
+    0%{text-shadow: 0 0 1px red;}
+    50%{text-shadow: 0 0 20px red;}
+    100%{text-shadow: 0 0 1px red;}    
+}
+
+#topCon
+{
+    animation: topCon 2s infinite;
+    
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    width: 600px;
+    height: 400px;
+}
+@keyframes topCon
+{
+    0%{box-shadow: 0 0 1px skyblue;}
+    50%{box-shadow: 0 0 25px skyblue;}
+    100%{box-shadow: 0 0 1px skyblue;}    
+}
+
+#container
+{
+    width: 600px;
+    height: 400px;
+    background-size: 600px 400px;
+    border-radius: 15px;
+    border: 2px solid white;
+    background-image: url("1.jpg");
+
+    animation: img 40s infinite;
+}
+@keyframes img
+{
+    10%{background-image: url("1.jpg");}
+    20%{background-image: url("5.gif");}
+    30%{background-image: url("7.jpg");}
+    60%{background-image: url("6.jpg");}
+    70%{background-image: url("3.gif");}
+    70%{background-image: url("2.gif");}
+    100%{background-image: url("4.jpg");}
+}

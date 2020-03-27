@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Happy BirthDay to You!</title>        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="HB.css">
+        <!-- Body Font Style -->
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script:600&display=swap&subset=latin-ext" rel="stylesheet">
+        
+        <!-- Sigature Font Style -->
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+        </style>
+
+    </head>
+
+    <body>
+    
+        <audio id="music" loop>
+            <source src="HB Song.mpeg" type="audio/mpeg" >
+        </audio>
+
+        <div id="mainDiv" >
+            <div id="subDiv">
+                <span id="msg" style="color: white; font-family: 'Dancing Script', cursive;">Surprise &nbsp; for &nbsp; You...<span><br>
+                <button id="btn" onclick="fun()" style="font-family: 'Dancing Script', cursive;">Open !</button>
+            </div>
+        </div>
+
+        <script>
+
+            function fun()
+            {
+                document.getElementById('music').play();
+                document.getElementById("mainDiv").style.display = "none";
+                document.body.style.backgroundColor = "black";
+                document.getElementById("topCon").style.display = "block";
+                document.getElementById("wish").style.display = "block";
+
+            }
+    
+        </script>  
+
+        <span id="wish" style="display: none; font-family: 'Dancing Script', cursive;">Happy Birthday to you ...</span>
+        <div id="topCon" style="display: none;">    
+            <div id="container">
+
+            </div>
+        </div>
+
+        
+        <div id="signature">
+            <span style="font-family: 'Dancing Script', cursive;">Developed by</span><br>    
+            <span style="font-family: 'Pacifico', cursive;">T . Ziya ...</span>
+        </div>
+            
+    </body>
+
+</html>
